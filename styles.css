@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 a {
   text-decoration: none;
@@ -112,8 +113,8 @@ main {
 
 /* list card */
 .list__card {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* card */
@@ -130,7 +131,115 @@ main {
   padding: 10px;
   width: 100%;
   height: 100%;
+  display: block;
 }
 .card h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+.card p {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+/* section introduce */
+.section__introduce {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vw;
+}
+/* intro */
+.intro {
+  width: 100vw;
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas:
+    "intro__one intro__two"
+    "intro__one intro__three";
+  grid-template-rows: 30vh 35vh;
+  grid-template-columns: 50vw 45vw;
+  gap: 20px;
+}
+
+.intro__all {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+}
+.intro__all h2 {
+  font-size: 4rem;
+}
+.intro__all p {
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+.intro__all button {
+  border: none;
+  outline: none;
+}
+.intro__all span {
+  position: absolute;
+}
+/* intro one */
+.intro__one {
+  background-image: url(./img/collection-item1.jpg);
+  grid-row: 1/3;
+  position: relative;
+}
+.content__one {
+  position: absolute;
+  width: 35%;
+  right: 10%;
+  top: 25%;
+}
+.content__one span {
+  bottom: -60px;
+}
+
+/* content__two */
+.content__two h2 {
+  width: 35%;
+  font-size: 3rem;
+}
+.content__two {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+.intro__two {
+  background-image: url(./img/collection-item2.jpg);
+}
+.intro__three {
+  background-image: url(./img/collection-item3.jpg);
+}
+/* footer */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.footer {
+  margin-top: 20px;
+  width: 20%;
+  opacity: 0.5;
+}
+/* footer__icon */
+.footer__icon ul {
+  display: flex;
+  justify-content: start;
+}
+.footer__icon ul li {
+  padding: 0 5px;
+}
+/* reponsiver */
+@media screen and (max-width: 1400px){
+   
+}
+/* em xin lỗi thời gian nó không cho  phép nên  em không thế responsive nhưng em vẫn biết nhúng ạ, bài dài quá
+(T.T)
+ */
